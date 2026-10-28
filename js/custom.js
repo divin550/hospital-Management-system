@@ -70,11 +70,11 @@
 
     $('#login-form').on('submit', function (event) {
       event.preventDefault();
-      window.location.href = 'dashboard.html';
+      window.location.href = 'dashboard.php';
     });
     $('#signup-form').on('submit', function (event) {
       event.preventDefault();
-      window.location.href = 'login.html';
+      window.location.href = 'login.php';
     });
   });
 }(jQuery));

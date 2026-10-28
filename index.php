@@ -26,12 +26,12 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-        <a class="navbar-brand" href="index.html"><span class="logo-mark">H</span>ealth Center</a>
+        <a class="navbar-brand" href="index.php"><span class="logo-mark">H</span>ealth Center</a>
       </div>
       <div class="collapse navbar-collapse" id="main-nav">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#doctors">Doctors</a></li><li><a href="#news">News</a></li><li><a href="#contact">Contact</a></li>
-          <li><a href="login.html">Login</a></li><li><a href="signup.html">Sign Up</a></li><li><a class="nav-appointment" href="#appointment">Make an appointment</a></li>
+          <li><a href="login.php">Login</a></li><li><a href="signup.php">Sign Up</a></li><li><a class="nav-appointment" href="#appointment">Make an appointment</a></li>
         </ul>
       </div>
     </div>
@@ -61,9 +61,9 @@
     <section class="section" id="news">
       <div class="container"><div class="section-heading"><h2>Latest News</h2><p>News from our health center</p></div>
         <div class="row">
-          <div class="col-sm-4 fade-in-up"><article class="news-card"><img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=700&q=80" alt="Medical care"><div class="news-info"><span class="date">March 08, 2025</span><h3><a href="news-detail.html">About Amazing Technology</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in lorem nisl.</p><div class="author-row"><img src="images/avatar.svg" alt=""><span>By Julia Walker<small>Health Specialist</small></span></div></div></article></div>
-          <div class="col-sm-4 fade-in-up"><article class="news-card"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=700&q=80" alt="Doctor talking with patient"><div class="news-info"><span class="date">February 20, 2025</span><h3><a href="news-detail.html">Introducing a new healing process</a></h3><p>Curabitur scelerisque, tortor nec mattis feugiat, velit purus euismod odio.</p><div class="author-row"><img src="images/avatar.svg" alt=""><span>By Linda Brown<small>Doctor</small></span></div></div></article></div>
-          <div class="col-sm-4 fade-in-up"><article class="news-card"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=700&q=80" alt="Medical team"><div class="news-info"><span class="date">January 12, 2025</span><h3><a href="news-detail.html">Review Annual Medical Research</a></h3><p>Praesent lacinia, arcu eget consequat volutpat, lectus enim posuere nulla.</p><div class="author-row"><img src="images/avatar.svg" alt=""><span>By Bryan Wilson<small>Researcher</small></span></div></div></article></div>
+          <div class="col-sm-4 fade-in-up"><article class="news-card"><img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=700&q=80" alt="Medical care"><div class="news-info"><span class="date">March 08, 2025</span><h3><a href="news-detail.php">About Amazing Technology</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in lorem nisl.</p><div class="author-row"><img src="images/avatar.svg" alt=""><span>By Julia Walker<small>Health Specialist</small></span></div></div></article></div>
+          <div class="col-sm-4 fade-in-up"><article class="news-card"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=700&q=80" alt="Doctor talking with patient"><div class="news-info"><span class="date">February 20, 2025</span><h3><a href="news-detail.php">Introducing a new healing process</a></h3><p>Curabitur scelerisque, tortor nec mattis feugiat, velit purus euismod odio.</p><div class="author-row"><img src="images/avatar.svg" alt=""><span>By Linda Brown<small>Doctor</small></span></div></div></article></div>
+          <div class="col-sm-4 fade-in-up"><article class="news-card"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=700&q=80" alt="Medical team"><div class="news-info"><span class="date">January 12, 2025</span><h3><a href="news-detail.php">Review Annual Medical Research</a></h3><p>Praesent lacinia, arcu eget consequat volutpat, lectus enim posuere nulla.</p><div class="author-row"><img src="images/avatar.svg" alt=""><span>By Bryan Wilson<small>Researcher</small></span></div></div></article></div>
         </div>
       </div>
     </section>
@@ -81,7 +81,7 @@
   <footer class="footer">
     <div class="container"><div class="row">
       <div class="col-sm-4"><h3>Contact Info</h3><p>Fusce at libero iaculis, venenatis augue quis, pharetra lorem. Curabitur ut dolor eu elit consequat.</p><ul class="footer-list"><li><i class="fa fa-phone"></i> 010-060-0160</li><li><i class="fa fa-envelope"></i> info@company.com</li></ul></div>
-      <div class="col-sm-4"><h3>Latest News</h3><div class="footer-news"><img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=120&q=70" alt=""><div><a href="news-detail.html">Amazing Technology</a><small>March 08, 2025</small></div></div><div class="footer-news"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=120&q=70" alt=""><div><a href="news-detail.html">New healing process</a><small>February 20, 2025</small></div></div></div>
+      <div class="col-sm-4"><h3>Latest News</h3><div class="footer-news"><img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=120&q=70" alt=""><div><a href="news-detail.php">Amazing Technology</a><small>March 08, 2025</small></div></div><div class="footer-news"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=120&q=70" alt=""><div><a href="news-detail.php">New healing process</a><small>February 20, 2025</small></div></div></div>
       <div class="col-sm-4"><h3>Opening Hours</h3><ul class="footer-list"><li>Monday - Friday <span class="pull-right">06:00 AM - 10:00 PM</span></li><li>Saturday <span class="pull-right">09:00 AM - 08:00 PM</span></li><li>Sunday <span class="pull-right">Closed</span></li></ul><div class="footer-social"><a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a><a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a><a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a></div></div>
     </div>
     <div class="row footer-bottom"><div class="col-sm-6"><p>Copyright © 2025 Health Center</p></div><div class="col-sm-6 footer-links"><a href="#contact">Laboratory Tests</a><a href="#doctors">Departments</a><a href="#contact">Insurance Policy</a><a href="#contact">Careers</a></div></div></div>

@@ -9,7 +9,7 @@
 </head>
 <body class="admin-login-page">
   <main class="admin-login-card">
-    <a class="admin-login-brand" href="../index.html"><span class="admin-logo-mark">H</span> Health Center</a>
+    <a class="admin-login-brand" href="../index.php"><span class="admin-logo-mark">H</span> Health Center</a>
     <h1>Admin Login</h1>
     <p class="login-subtitle">Sign in to manage your health center</p>
     <form id="admin-login-form" novalidate>
@@ -18,7 +18,7 @@
       <div class="checkbox"><label><input type="checkbox"> Remember me</label></div>
       <button class="btn btn-admin-primary btn-block" type="submit">Login</button>
     </form>
-    <a class="login-home-link" href="../index.html"><i class="fa fa-long-arrow-left"></i> Back to Health Center</a>
+    <a class="login-home-link" href="../index.php"><i class="fa fa-long-arrow-left"></i> Back to Health Center</a>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

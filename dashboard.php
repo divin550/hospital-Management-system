@@ -10,14 +10,14 @@
 </head>
 <body class="dashboard-layout">
   <aside class="dash-sidebar">
-    <a class="dash-logo" href="index.html"><span class="logo-mark">H</span> Health Center</a>
+    <a class="dash-logo" href="index.php"><span class="logo-mark">H</span> Health Center</a>
     <ul class="dash-menu">
-      <li><a class="active" href="dashboard.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-      <li><a href="admin/appointments.html"><i class="fa fa-calendar"></i> Appointments</a></li>
-      <li><a href="admin/patients.html"><i class="fa fa-users"></i> Patients</a></li>
-      <li><a href="admin/doctors.html"><i class="fa fa-user-md"></i> Doctors</a></li>
-      <li><a href="admin/reports.html"><i class="fa fa-file-text"></i> Reports</a></li>
-      <li><a href="login.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+      <li><a class="active" href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+      <li><a href="admin/appointments.php"><i class="fa fa-calendar"></i> Appointments</a></li>
+      <li><a href="admin/patients.php"><i class="fa fa-users"></i> Patients</a></li>
+      <li><a href="admin/doctors.php"><i class="fa fa-user-md"></i> Doctors</a></li>
+      <li><a href="admin/reports.php"><i class="fa fa-file-text"></i> Reports</a></li>
+      <li><a href="login.php"><i class="fa fa-sign-out"></i> Logout</a></li>
     </ul>
   </aside>
   <main class="dash-main">

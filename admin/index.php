@@ -10,14 +10,14 @@
       <div class="col-sm-6 col-lg-3"><div class="admin-stat-card"><span class="admin-stat-icon"><i class="fa fa-money"></i></span><div><strong>$12,840</strong><small>Monthly Revenue</small></div></div></div>
     </div>
     <div class="row">
-      <div class="col-lg-8"><section class="admin-card"><div class="admin-card-heading"><h2>Recent Appointments</h2><a href="appointments.html">View all</a></div><div class="table-responsive"><table class="table table-striped table-hover admin-table searchable-table"><thead><tr><th>Patient</th><th>Doctor</th><th>Department</th><th>Date</th><th>Status</th></tr></thead><tbody>
+      <div class="col-lg-8"><section class="admin-card"><div class="admin-card-heading"><h2>Recent Appointments</h2><a href="appointments.php">View all</a></div><div class="table-responsive"><table class="table table-striped table-hover admin-table searchable-table"><thead><tr><th>Patient</th><th>Doctor</th><th>Department</th><th>Date</th><th>Status</th></tr></thead><tbody>
         <tr><td>Olivia Martin</td><td>Dr. Nate Baston</td><td>General Health</td><td>Oct 27, 2026</td><td><span class="label label-approved">Approved</span></td></tr>
         <tr><td>James Wilson</td><td>Dr. Miasha Nakahara</td><td>Cardiology</td><td>Oct 27, 2026</td><td><span class="label label-pending">Pending</span></td></tr>
         <tr><td>Emily Johnson</td><td>Dr. Jason Stewart</td><td>Pregnancy</td><td>Oct 28, 2026</td><td><span class="label label-approved">Approved</span></td></tr>
         <tr><td>Michael Brown</td><td>Dr. Nate Baston</td><td>General Health</td><td>Oct 28, 2026</td><td><span class="label label-cancelled">Cancelled</span></td></tr>
         <tr><td>Sophia Davis</td><td>Dr. Miasha Nakahara</td><td>Cardiology</td><td>Oct 29, 2026</td><td><span class="label label-pending">Pending</span></td></tr>
       </tbody></table></div></section></div>
-      <div class="col-lg-4"><section class="admin-card"><div class="admin-card-heading"><h2>New Patients</h2><a href="patients.html">View all</a></div><ul class="new-patient-list">
+      <div class="col-lg-4"><section class="admin-card"><div class="admin-card-heading"><h2>New Patients</h2><a href="patients.php">View all</a></div><ul class="new-patient-list">
         <li><img src="../images/avatar.svg" alt=""><span><strong>Olivia Martin</strong><small>Registered today</small></span></li>
         <li><img src="../images/avatar.svg" alt=""><span><strong>James Wilson</strong><small>Registered yesterday</small></span></li>
         <li><img src="../images/avatar.svg" alt=""><span><strong>Emily Johnson</strong><small>Registered Oct 24</small></span></li>
