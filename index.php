@@ -38,7 +38,7 @@
       </div>
     </div>
   </nav> -->
-  <?php require_once "./components/nav.php";?>
+  <?php require_once "components/nav.php";?>
   <main>
     <section class="hero" id="home" aria-label="Featured health center stories">
       <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1900&q=85')"><div class="container"><div class="hero-content"><p>Let’s make your life happier</p><h1>Healthy Living</h1><a class="btn btn-green" href="#doctors">Meet Our Doctors</a></div></div></div>
