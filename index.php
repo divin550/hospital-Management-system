@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Health Center | Professional Health Care</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css"> -->
+  <?php require_once "components/linkcss.php";?>
 </head>
 <body id="top">
   <div class="preloader"><span class="loader"></span></div>
-  <header class="topbar">
+  <!-- <header class="topbar">
     <div class="container">
       <div class="row">
         <div class="col-sm-4 welcome"><p>Welcome to a Professional Health Care</p></div>
@@ -21,8 +22,9 @@
         </div>
       </div>
     </div>
-  </header>
-  <nav class="navbar navbar-default">
+  </header> -->
+  <?php require_once "components/sub_nav.php";?>
+  <!-- <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
@@ -35,7 +37,8 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
+  <?php require_once "./components/nav.php";?>
   <main>
     <section class="hero" id="home" aria-label="Featured health center stories">
       <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1900&q=85')"><div class="container"><div class="hero-content"><p>Let’s make your life happier</p><h1>Healthy Living</h1><a class="btn btn-green" href="#doctors">Meet Our Doctors</a></div></div></div>
@@ -87,8 +90,9 @@
     <div class="row footer-bottom"><div class="col-sm-6"><p>Copyright © 2025 Health Center</p></div><div class="col-sm-6 footer-links"><a href="#contact">Laboratory Tests</a><a href="#doctors">Departments</a><a href="#contact">Insurance Policy</a><a href="#contact">Careers</a></div></div></div>
   </footer>
   <a class="back-top" href="#top" aria-label="Back to top"><i class="fa fa-angle-up"></i></a>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="js/custom.js"></script> -->
+  <?php require_once "components/linkjs.php";?>
 </body>
 </html>
