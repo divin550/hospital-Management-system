@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         $ins = mysqli_query($con, $query);
         if ($ins) {
-            header("Location: login.php");
+            header("Location: patient-portal.php");
             exit;
             # code...
         }else {
