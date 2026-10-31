@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         $ins = mysqli_query($con, $query);
         if ($ins) {
-            header("Location: dashboard.php");
+            header("Location: login.php");
             exit;
             # code...
         }else {
