@@ -4,40 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Health Center | Professional Health Care</title>
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css"> -->
+  
   <?php require_once "components/linkcss.php";?>
 </head>
 <body id="top">
   <div class="preloader"><span class="loader"></span></div>
-  <!-- <header class="topbar">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4 welcome"><p>Welcome to a Professional Health Care</p></div>
-        <div class="col-sm-8 contact-details">
-          <span><i class="fa fa-phone"></i>010-060-0160</span>
-          <span><i class="fa fa-calendar"></i>6:00 AM - 10:00 PM (Mon-Fri)</span>
-          <span><i class="fa fa-envelope"></i>info@company.com</span>
-        </div>
-      </div>
-    </div>
-  </header> -->
+  
   <?php require_once "components/sub_nav.php";?>
-  <!-- <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-        <a class="navbar-brand" href="index.php"><span class="logo-mark">H</span>ealth Center</a>
-      </div>
-      <div class="collapse navbar-collapse" id="main-nav">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#doctors">Doctors</a></li><li><a href="#news">News</a></li><li><a href="#contact">Contact</a></li>
-          <li><a href="login.php">Login</a></li><li><a href="signup.php">Sign Up</a></li><li><a class="nav-appointment" href="#appointment">Make an appointment</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
+  
   <?php require_once "components/nav.php";?>
   <main>
     <section class="hero" id="home" aria-label="Featured health center stories">
@@ -81,18 +55,11 @@
     </section>
     <section id="contact"><iframe class="map-frame" title="Map showing Health Center location" src="https://maps.google.com/maps?q=New%20York%20City&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe></section>
   </main>
-  <footer class="footer">
-    <div class="container"><div class="row">
-      <div class="col-sm-4"><h3>Contact Info</h3><p>Fusce at libero iaculis, venenatis augue quis, pharetra lorem. Curabitur ut dolor eu elit consequat.</p><ul class="footer-list"><li><i class="fa fa-phone"></i> 010-060-0160</li><li><i class="fa fa-envelope"></i> info@company.com</li></ul></div>
-      <div class="col-sm-4"><h3>Latest News</h3><div class="footer-news"><img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=120&q=70" alt=""><div><a href="news-detail.php">Amazing Technology</a><small>March 08, 2025</small></div></div><div class="footer-news"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=120&q=70" alt=""><div><a href="news-detail.php">New healing process</a><small>February 20, 2025</small></div></div></div>
-      <div class="col-sm-4"><h3>Opening Hours</h3><ul class="footer-list"><li>Monday - Friday <span class="pull-right">06:00 AM - 10:00 PM</span></li><li>Saturday <span class="pull-right">09:00 AM - 08:00 PM</span></li><li>Sunday <span class="pull-right">Closed</span></li></ul><div class="footer-social"><a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a><a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a><a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a></div></div>
-    </div>
-    <div class="row footer-bottom"><div class="col-sm-6"><p>Copyright © 2025 Health Center</p></div><div class="col-sm-6 footer-links"><a href="#contact">Laboratory Tests</a><a href="#doctors">Departments</a><a href="#contact">Insurance Policy</a><a href="#contact">Careers</a></div></div></div>
-  </footer>
-  <a class="back-top" href="#top" aria-label="Back to top"><i class="fa fa-angle-up"></i></a>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="js/custom.js"></script> -->
+  
+  <?php require_once "components/footer.php";?>
+  
+   <?php require_once "components/backdrop.php";?>
+  
   <?php require_once "components/linkjs.php";?>
 </body>
 </html>
