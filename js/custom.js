@@ -80,9 +80,9 @@
       event.preventDefault();
       window.location.href = "dashboard.php";
     });
-    $("#signup-form").on("submit", function (event) {
-      event.preventDefault();
-      window.location.href = "login.php";
-    });
+    // $("#signup-form").on("submit", function (event) {
+    //   event.preventDefault();
+    //   window.location.href = "login.php";
+    // });
   });
 })(jQuery);
