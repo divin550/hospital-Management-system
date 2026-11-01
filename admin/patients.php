@@ -53,7 +53,7 @@ $result = mysqli_query($con, $query);
               <td><?php echo $patient["last_visit"];?></td>
               <td class="action-cell">
                 <a href="patient_edit.php?id=<?php echo (int) $patient['id']; ?>" class="btn btn-xs btn-admin-primary" data-edit><i class="fa fa-pencil"></i></a>
-                <button class="btn btn-xs btn-danger" data-delete><i class="fa fa-trash"></i></button>
+                <a href="patient_delete.php?id=<?php echo (int) $patient['id']; ?>" class="btn btn-xs btn-danger" data-delete><i class="fa fa-trash"></i></a>
               </td>
             </tr>
             <?php
