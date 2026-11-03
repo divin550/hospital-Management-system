@@ -1,19 +1,113 @@
+<?php
+require_once "../components/connection.php";
+$query = "SELECT * FROM doctor_table";
+$result = mysqli_query($con, $query);
+?>
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Doctors | Health Center Admin</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="../css/admin.css"></head>
-<body class="admin-page" data-title="Doctors"><main class="admin-content">
-  <section class="admin-card doctor-directory"><div class="admin-card-heading"><h2>Medical Team</h2><button class="btn btn-admin-primary" data-toggle="modal" data-target="#doctor-modal"><i class="fa fa-plus"></i> Add Doctor</button></div><div class="row">
-    <div class="col-sm-6 col-lg-4"><article class="admin-doctor-card"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=550&q=80" alt="Dr. Nate Baston"><div class="admin-doctor-info"><span class="label label-approved pull-right">Active</span><h3>Nate Baston</h3><p class="doctor-specialty">General Principal</p><p><i class="fa fa-phone"></i> 010-020-0120<br><i class="fa fa-envelope"></i> nate@healthcenter.com</p><button class="btn btn-xs btn-admin-primary" data-edit><i class="fa fa-pencil"></i> Edit</button> <button class="btn btn-xs btn-danger" data-delete><i class="fa fa-trash"></i> Delete</button></div></article></div>
-    <div class="col-sm-6 col-lg-4"><article class="admin-doctor-card"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=550&q=80" alt="Dr. Jason Stewart"><div class="admin-doctor-info"><span class="label label-approved pull-right">Active</span><h3>Jason Stewart</h3><p class="doctor-specialty">Pregnancy</p><p><i class="fa fa-phone"></i> 010-070-0170<br><i class="fa fa-envelope"></i> jason@healthcenter.com</p><button class="btn btn-xs btn-admin-primary" data-edit><i class="fa fa-pencil"></i> Edit</button> <button class="btn btn-xs btn-danger" data-delete><i class="fa fa-trash"></i> Delete</button></div></article></div>
-    <div class="col-sm-6 col-lg-4"><article class="admin-doctor-card"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=550&q=80" alt="Dr. Miasha Nakahara"><div class="admin-doctor-info"><span class="label label-approved pull-right">Active</span><h3>Miasha Nakahara</h3><p class="doctor-specialty">Cardiology</p><p><i class="fa fa-phone"></i> 010-040-0140<br><i class="fa fa-envelope"></i> miasha@healthcenter.com</p><button class="btn btn-xs btn-admin-primary" data-edit><i class="fa fa-pencil"></i> Edit</button> <button class="btn btn-xs btn-danger" data-delete><i class="fa fa-trash"></i> Delete</button></div></article></div>
-    <div class="col-sm-6 col-lg-4"><article class="admin-doctor-card"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=550&q=80" alt="Dr. Rachel Green"><div class="admin-doctor-info"><span class="label label-approved pull-right">Active</span><h3>Rachel Green</h3><p class="doctor-specialty">Dental</p><p><i class="fa fa-phone"></i> 010-050-0150<br><i class="fa fa-envelope"></i> rachel@healthcenter.com</p><button class="btn btn-xs btn-admin-primary" data-edit><i class="fa fa-pencil"></i> Edit</button> <button class="btn btn-xs btn-danger" data-delete><i class="fa fa-trash"></i> Delete</button></div></article></div>
-    <div class="col-sm-6 col-lg-4"><article class="admin-doctor-card"><img src="https://images.unsplash.com/photo-1612531386530-97286d97c2d2?auto=format&fit=crop&w=550&q=80" alt="Dr. David Lee"><div class="admin-doctor-info"><span class="label label-inactive pull-right">Inactive</span><h3>David Lee</h3><p class="doctor-specialty">Medical Research</p><p><i class="fa fa-phone"></i> 010-030-0130<br><i class="fa fa-envelope"></i> david@healthcenter.com</p><button class="btn btn-xs btn-admin-primary" data-edit><i class="fa fa-pencil"></i> Edit</button> <button class="btn btn-xs btn-danger" data-delete><i class="fa fa-trash"></i> Delete</button></div></article></div>
-    <div class="col-sm-6 col-lg-4"><article class="admin-doctor-card"><img src="https://images.unsplash.com/photo-1591604021695-0c69b7c05981?auto=format&fit=crop&w=550&q=80" alt="Dr. Sophia Chen"><div class="admin-doctor-info"><span class="label label-approved pull-right">Active</span><h3>Sophia Chen</h3><p class="doctor-specialty">General Health</p><p><i class="fa fa-phone"></i> 010-080-0180<br><i class="fa fa-envelope"></i> sophia@healthcenter.com</p><button class="btn btn-xs btn-admin-primary" data-edit><i class="fa fa-pencil"></i> Edit</button> <button class="btn btn-xs btn-danger" data-delete><i class="fa fa-trash"></i> Delete</button></div></article></div>
-  </div></section>
-  <div class="modal fade" id="doctor-modal" tabindex="-1" role="dialog" aria-labelledby="doctor-modal-title"><div class="modal-dialog" role="document"><div class="modal-content">
-    <form action="doctor-add.php" method="post" class="save-form" enctype="multipart/form-data"><div class="modal-header"><button  type="button" class="close" data-dismiss="modal"><span>&times;</span></button><h4 class="modal-title"  id="doctor-modal-title">Add Doctor</h4></div><div  class="modal-body">
-  <div class="form-group"><label>Name</label><input name="name" class="form-control" placeholder="Doctor name"></div><div  class="form-group"><label>Specialty</label><input name="specialty" class="form-control" placeholder="Specialty"></div><div  class="form-group"><label>Phone</label><input name="phone" class="form-control" placeholder="Phone number"></div><div  class="form-group"><label>Email</label><input name="email" class="form-control" type="email" placeholder="Email  address"></div><div class="form-group"><label>Photo</ label><input name="photo" class="form-control" type="file" accept="image/ *"></div><div class="form-group"><label>Status</ label><select name="status" class="form-control"><option>Active</ option><option>Inactive</option></select></div>
-  <div class="form-group"><label for="available-from">Available From</label><input class="form-control" id="available-from" name="available-from" type="time"></div><div class="form-group"><label for="available-until">Available Until</label><input class="form-control" id="available-until" name="available-until" type="time"></div><div class="form-group"><label for="working-days">Working Days</label><input class="form-control" id="working-days" name="working-days" type="text" placeholder="e.g. Monday-Friday"></div>
-</div><div class="modal-footer"><button type="button"  class="btn btn-default" data-dismiss="modal">Close</ button><button type="submit" class="btn  btn-admin-primary">Save Doctor</button></div>
-   </form></div></div></div>
-</main><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script><script src="../js/admin.js?v=doctor-add-post-fix"></script></body></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doctors | Health Center Admin</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-page" data-title="Doctors">
+  <main class="admin-content">
+    <section class="admin-card doctor-directory">
+      <div class="admin-card-heading">
+        <h2>Medical Team</h2>
+        <button class="btn btn-admin-primary" data-toggle="modal" data-target="#doctor-modal">
+          <i class="fa fa-plus"></i> Add Doctor
+        </button>
+      </div>
+      <div class="row">
+        <?php while ($doctor = mysqli_fetch_assoc($result)){
+              
+        ?>
+        <div class="col-sm-6 col-lg-4">
+          <article class="admin-doctor-card">
+            <img src="<?php echo $doctor["photo"];?>" alt="Dr. Nate Baston">
+            <div class="admin-doctor-info">
+              <span class="label label-approved pull-right"><?php echo $doctor["status"];?></span>
+              <h3><?php echo $doctor["name"];?></h3>
+              <p class="doctor-specialty"><?php echo $doctor["specialty"];?></p>
+              <p>
+                <i class="fa fa-phone"></i> <?php echo $doctor["phone"];?><br>
+                <i class="fa fa-envelope"></i> <?php echo $doctor["email"];?>
+              </p>
+              <a class="btn btn-xs btn-admin-primary" href="doctor-edit.php?id=<?php echo (int) $doctor['id']; ?>"><i class="fa fa-pencil"></i> Edit</a>
+              <button class="btn btn-xs btn-danger" data-delete><i class="fa fa-trash"></i> Delete</button>
+            </div>
+          </article>
+        </div>
+        <?php
+        }
+        ?>
+      </div>
+    </section>
+
+    <div class="modal fade" id="doctor-modal" tabindex="-1" role="dialog" aria-labelledby="doctor-modal-title">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form action="doctor-add.php" method="post" class="save-form" enctype="multipart/form-data">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+              <h4 class="modal-title" id="doctor-modal-title">Add Doctor</h4>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label>Name</label>
+                <input name="name" class="form-control" placeholder="Doctor name">
+              </div>
+              <div class="form-group">
+                <label>Specialty</label>
+                <input name="specialty" class="form-control" placeholder="Specialty">
+              </div>
+              <div class="form-group">
+                <label>Phone</label>
+                <input name="phone" class="form-control" placeholder="Phone number">
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input name="email" class="form-control" type="email" placeholder="Email  address">
+              </div>
+              <div class="form-group">
+                <label>Photo</ label>
+                <input name="photo" class="form-control" type="file" accept="image/ *">
+              </div>
+              <div class="form-group">
+                <label>Status</ label>
+                <select name="status" class="form-control">
+                  <option>Active</ option>
+                  <option>Inactive</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="available-from">Available From</label>
+                <input class="form-control" id="available-from" name="available-from" type="time">
+              </div>
+              <div class="form-group">
+                <label for="available-until">Available Until</label>
+                <input class="form-control" id="available-until" name="available-until" type="time">
+              </div>
+              <div class="form-group">
+                <label for="working-days">Working Days</label>
+                <input class="form-control" id="working-days" name="working-days" type="text" placeholder="e.g. Monday-Friday">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-admin-primary">Save Doctor</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="../js/admin.js?v=doctor-add-post-fix"></script>
+</body>
+</html>
