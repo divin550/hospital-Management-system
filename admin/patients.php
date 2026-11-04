@@ -18,9 +18,6 @@ $result = mysqli_query($con, $query);
     <section class="admin-card">
       <div class="admin-card-heading">
         <h2>Patient Directory</h2>
-        <button class="btn btn-admin-primary" data-toggle="modal" data-target="#patient-modal">
-          <i class="fa fa-plus"></i> Add Patient
-        </button>
       </div>
       <div class="admin-filter-row">
         <input class="form-control table-filter-search" placeholder="Search patients">
@@ -70,54 +67,6 @@ $result = mysqli_query($con, $query);
         <li><a href="#">»</a></li>
       </ul>
     </section>
-    <div class="modal fade" id="patient-modal" tabindex="-1" role="dialog" aria-labelledby="patient-modal-title">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <form class="save-form">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
-              <h4 class="modal-title" id="patient-modal-title">Add Patient</h4>
-            </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-sm-6 form-group">
-                  <label>Name</label>
-                  <input class="form-control" placeholder="Patient name">
-                </div>
-                <div class="col-sm-6 form-group">
-                  <label>Age</label>
-                  <input class="form-control" type="number" placeholder="Age">
-                </div>
-                <div class="col-sm-6 form-group">
-                  <label>Gender</label>
-                  <select class="form-control">
-                    <option>Female</option>
-                    <option>Male</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-                <div class="col-sm-6 form-group">
-                  <label>Phone</label>
-                  <input class="form-control" placeholder="Phone number">
-                </div>
-                <div class="col-sm-12 form-group">
-                  <label>Email</label>
-                  <input class="form-control" type="email" placeholder="Email address">
-                </div>
-                <div class="col-sm-12 form-group">
-                  <label>Address</label>
-                  <textarea class="form-control" rows="3" placeholder="Address"></textarea>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-admin-primary">Save Patient</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
