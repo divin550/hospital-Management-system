@@ -66,12 +66,12 @@
       $('.admin-settings-tabs a[href="' + window.location.hash + '"]').tab('show');
     }
 
-    $(document).on('click', '[data-delete]', function () {
-      if (window.confirm('Are you sure you want to delete this item?')) {
-        $(this).closest('tr, .admin-doctor-card').remove();
-        showToast('Item removed');
-      }
-    });
+    // $(document).on('click', '[data-delete]', function () {
+    //   if (window.confirm('Are you sure you want to delete this item?')) {
+    //     $(this).closest('tr, .admin-doctor-card').remove();
+    //     showToast('Item removed');
+    //   }
+    // });
     $(document).on('click', '[data-cancel]', function () {
       if (window.confirm('Cancel this appointment?')) {
         $(this).closest('tr').find('.label').removeClass('label-approved label-pending').addClass('label-cancelled').text('Cancelled');

@@ -38,7 +38,7 @@ $result = mysqli_query($con, $query);
                 <i class="fa fa-envelope"></i> <?php echo $doctor["email"];?>
               </p>
               <a class="btn btn-xs btn-admin-primary" href="doctor-edit.php?id=<?php echo (int) $doctor['id']; ?>"><i class="fa fa-pencil"></i> Edit</a>
-              <button class="btn btn-xs btn-danger" data-delete><i class="fa fa-trash"></i> Delete</button>
+              <a href="doctor-delete.php?id=<?php echo (int) $doctor['id']; ?>" class="btn btn-xs btn-danger" data-delete><i class="fa fa-trash"></i> Delete</a>
             </div>
           </article>
         </div>
@@ -108,6 +108,6 @@ $result = mysqli_query($con, $query);
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="../js/admin.js?v=doctor-add-post-fix"></script>
+  <script src="../js/admin.js?v=doctor-add-POST-fix"></script>
 </body>
 </html>

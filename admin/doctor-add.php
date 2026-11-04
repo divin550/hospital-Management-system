@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       );
       if (move_uploaded_file($tmpName, $folder)) {
         mysqli_stmt_execute($stmt);
-        echo "<script>alert('Doctor added successfully!';) window.location = 'doctors.php'</script>";
+        echo "<script>alert('Doctor added successfully!'); window.location = 'doctors.php'</script>";
     } else {
           echo "<script>alert('Error while adding doctor'); window.location = 'doctors.php' </script>";
     }
