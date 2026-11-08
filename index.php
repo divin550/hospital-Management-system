@@ -223,7 +223,16 @@ $result = mysqli_query($con, $query);
                   <input class="form-control" type="time" aria-label="Select Time">
                 </div>
                 <div class="col-sm-6 form-group">
-                  <select class="form-control" aria-label="Select Department">
+                  <select class="form-control" name="doctor" aria-label="Select Doctor" id="doctor" required>
+                    <option value="">Select Doctor</option>
+                    <option value="Nate Baston">Dr. Nate Baston - General Principal</option>
+                    <option value="Jason Stewart">Dr. Jason Stewart - Pregnancy</option>
+                    <option value="Miasha Nakahara">Dr. Miasha Nakahara - Cardiology</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <select class="form-control" aria-label="Select Department" id="department">
+                     <option value="">Select Department</option>
                     <?php while ($row = mysqli_fetch_assoc($result)) {
                     ?>
                     <option value="<?php echo htmlspecialchars($row['specialty']);?>"><?php echo htmlspecialchars($row['specialty']);?></option>
