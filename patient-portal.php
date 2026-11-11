@@ -17,7 +17,7 @@
       <li><a href="#records"><i class="fa fa-folder-open"></i> Medical Records</a></li>
       <li><a href="#prescriptions"><i class="fa fa-medkit"></i> Prescriptions</a></li>
       <li><a href="#billing"><i class="fa fa-credit-card"></i> Billing</a></li>
-      <li><a href="http://localhost/hospital%20Management%20system/logout.php?test=1"><i class="fa fa-sign-out"></i> Logout</a></li>
+      <li><a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a></li>
     </ul>
   </aside>
   <main class="dash-main">
