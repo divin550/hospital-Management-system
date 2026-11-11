@@ -17,7 +17,7 @@
       <li><a href="#records"><i class="fa fa-folder-open"></i> Medical Records</a></li>
       <li><a href="#prescriptions"><i class="fa fa-medkit"></i> Prescriptions</a></li>
       <li><a href="#billing"><i class="fa fa-credit-card"></i> Billing</a></li>
-      <li><a href="login.php"><i class="fa fa-sign-out"></i> Logout</a></li>
+      <li><a href="http://localhost/hospital%20Management%20system/logout.php?test=1"><i class="fa fa-sign-out"></i> Logout</a></li>
     </ul>
   </aside>
   <main class="dash-main">
@@ -39,6 +39,6 @@
       </div>
     </div>
   </main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script><script src="js/custom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script><script src="js/custom.jsv=logout-post-fix"></script>
 </body>
 </html>

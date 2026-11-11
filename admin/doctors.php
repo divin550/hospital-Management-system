@@ -51,7 +51,8 @@ $result = mysqli_query($con, $query);
     <div class="modal fade" id="doctor-modal" tabindex="-1" role="dialog" aria-labelledby="doctor-modal-title">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <form action="doctor-add.php" method="post" class="save-form" enctype="multipart/form-data">
+          <!-- Use normal browser form submission; the old save-form class was used by the UI-only JavaScript handler and could stop the POST. -->
+          <form action="./doctor-add.php" method="post" enctype="multipart/form-data">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
               <h4 class="modal-title" id="doctor-modal-title">Add Doctor</h4>
@@ -74,14 +75,15 @@ $result = mysqli_query($con, $query);
                 <input name="email" class="form-control" type="email" placeholder="Email  address">
               </div>
               <div class="form-group">
-                <label>Photo</ label>
-                <input name="photo" class="form-control" type="file" accept="image/ *">
+                <!-- doctor-add.php expects an uploaded photo, so require one here to ensure its POST handler receives a file. -->
+                <label>Photo</label>
+                <input name="photo" class="form-control" type="file" accept="image/*" required>
               </div>
               <div class="form-group">
-                <label>Status</ label>
+                <label>Status</label>
                 <select name="status" class="form-control">
-                  <option>Active</ option>
-                  <option>Inactive</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
                 </select>
               </div>
               <div class="form-group">
@@ -108,6 +110,6 @@ $result = mysqli_query($con, $query);
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="../js/admin.js?v=doctor-add-POST-fix"></script>
+  <script src="../js/admin.js?v=doctor-add-post-fix"></script>
 </body>
 </html>

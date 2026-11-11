@@ -91,11 +91,11 @@
     $(document).on('click', '[data-download]', function () {
       showToast('Report download is a UI-only action');
     });
-    $('.save-form').on('submit', function (event) {
-      event.preventDefault();
-      $(this).closest('.modal').modal('hide');
-      showToast('Saved successfully');
-    });
+    // $('.save-form').on('submit', function (event) {
+    //   event.preventDefault();
+    //   $(this).closest('.modal').modal('hide');
+    //   showToast('Saved successfully');
+    // });
     $('#admin-login-form').on('submit', function (event) {
       event.preventDefault();
       window.location.href = 'index.php';

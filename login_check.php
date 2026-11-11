@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $_SESSION["patient_id"] = $patient["id"];
             $_SESSION["patient_name"] = $patient["name"];
 
-           echo "<script>alert('login successful'); window.location = 'dashboard.php'</script>";
+           echo "<script>alert('login successful'); window.location = 'patient-portal.php'</script>";
             exit;
             # code...
         }else {
