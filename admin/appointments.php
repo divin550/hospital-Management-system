@@ -1,3 +1,13 @@
+<?php
+require_once "../components/connection.php";
+$query = "SELECT appointment_table_new.*, doctor_table.name AS doctor_name
+          FROM appointment_table_new
+          INNER JOIN doctor_table
+          ON appointment_table_new.doctor_id = doctor_table.id";
+
+$result = mysqli_query($con, $query);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,116 +60,34 @@
               <th>Patient</th>
               <th>Doctor</th>
               <th>Department</th>
-              <th>Date &amp; Time</th>
+              <th>Date</th>
+              <th>Time</th>
               <th>Status</th>
               <th>Actions</th>
             </tr>
           </thead>
           <tbody>
+            <?php
+            while ($row = mysqli_fetch_assoc($result)) {
+            
+            ?>
             <tr data-date="2026-10-27">
-              <td>APT-1042</td>
-              <td>Olivia Martin</td>
-              <td>Dr. Nate Baston</td>
-              <td>General Health</td>
-              <td>Oct 27, 2026 · 09:30 AM</td>
-              <td><span class="label label-approved">Approved</span></td>
+              <td><?php echo $row["id"]?></td>
+              <td><?php echo $row["appointment_name"]?></td>
+              <td><?php echo $row["doctor_name"]?></td>
+              <td><?php echo $row["department"]?></td>
+              <td><?php echo $row["appointment_date"]?></td>
+              <td><?php echo $row["appointment_time"]?></td>
+              <td><span class="label label-approved"><?php echo $row["status"]?></span></td>
               <td class="action-cell">
                 <button class="btn btn-xs btn-default" data-view="Appointment APT-1042"><i class="fa fa-eye"></i></button>
                 <button class="btn btn-xs btn-admin-primary" data-approve><i class="fa fa-check"></i></button>
                 <button class="btn btn-xs btn-danger" data-cancel><i class="fa fa-times"></i></button>
               </td>
             </tr>
-            <tr data-date="2026-10-27">
-              <td>APT-1043</td>
-              <td>James Wilson</td>
-              <td>Dr. Miasha Nakahara</td>
-              <td>Cardiology</td>
-              <td>Oct 27, 2026 · 10:00 AM</td>
-              <td><span class="label label-pending">Pending</span></td>
-              <td class="action-cell">
-                <button class="btn btn-xs btn-default" data-view="Appointment APT-1043"><i class="fa fa-eye"></i></button>
-                <button class="btn btn-xs btn-admin-primary" data-approve><i class="fa fa-check"></i></button>
-                <button class="btn btn-xs btn-danger" data-cancel><i class="fa fa-times"></i></button>
-              </td>
-            </tr>
-            <tr data-date="2026-10-28">
-              <td>APT-1044</td>
-              <td>Emily Johnson</td>
-              <td>Dr. Jason Stewart</td>
-              <td>Pregnancy</td>
-              <td>Oct 28, 2026 · 11:15 AM</td>
-              <td><span class="label label-approved">Approved</span></td>
-              <td class="action-cell">
-                <button class="btn btn-xs btn-default" data-view="Appointment APT-1044"><i class="fa fa-eye"></i></button>
-                <button class="btn btn-xs btn-admin-primary" data-approve><i class="fa fa-check"></i></button>
-                <button class="btn btn-xs btn-danger" data-cancel><i class="fa fa-times"></i></button>
-              </td>
-            </tr>
-            <tr data-date="2026-10-28">
-              <td>APT-1045</td>
-              <td>Michael Brown</td>
-              <td>Dr. Nate Baston</td>
-              <td>General Health</td>
-              <td>Oct 28, 2026 · 01:00 PM</td>
-              <td><span class="label label-cancelled">Cancelled</span></td>
-              <td class="action-cell">
-                <button class="btn btn-xs btn-default" data-view="Appointment APT-1045"><i class="fa fa-eye"></i></button>
-                <button class="btn btn-xs btn-admin-primary" data-approve><i class="fa fa-check"></i></button>
-                <button class="btn btn-xs btn-danger" data-cancel><i class="fa fa-times"></i></button>
-              </td>
-            </tr>
-            <tr data-date="2026-10-29">
-              <td>APT-1046</td>
-              <td>Sophia Davis</td>
-              <td>Dr. Miasha Nakahara</td>
-              <td>Cardiology</td>
-              <td>Oct 29, 2026 · 09:00 AM</td>
-              <td><span class="label label-pending">Pending</span></td>
-              <td class="action-cell">
-                <button class="btn btn-xs btn-default" data-view="Appointment APT-1046"><i class="fa fa-eye"></i></button>
-                <button class="btn btn-xs btn-admin-primary" data-approve><i class="fa fa-check"></i></button>
-                <button class="btn btn-xs btn-danger" data-cancel><i class="fa fa-times"></i></button>
-              </td>
-            </tr>
-            <tr data-date="2026-10-30">
-              <td>APT-1047</td>
-              <td>William Taylor</td>
-              <td>Dr. Rachel Green</td>
-              <td>Dental</td>
-              <td>Oct 30, 2026 · 02:30 PM</td>
-              <td><span class="label label-approved">Approved</span></td>
-              <td class="action-cell">
-                <button class="btn btn-xs btn-default" data-view="Appointment APT-1047"><i class="fa fa-eye"></i></button>
-                <button class="btn btn-xs btn-admin-primary" data-approve><i class="fa fa-check"></i></button>
-                <button class="btn btn-xs btn-danger" data-cancel><i class="fa fa-times"></i></button>
-              </td>
-            </tr>
-            <tr data-date="2026-10-31">
-              <td>APT-1048</td>
-              <td>Ava Thompson</td>
-              <td>Dr. David Lee</td>
-              <td>Medical Research</td>
-              <td>Oct 31, 2026 · 10:30 AM</td>
-              <td><span class="label label-pending">Pending</span></td>
-              <td class="action-cell">
-                <button class="btn btn-xs btn-default" data-view="Appointment APT-1048"><i class="fa fa-eye"></i></button>
-                <button class="btn btn-xs btn-admin-primary" data-approve><i class="fa fa-check"></i></button>
-                <button class="btn btn-xs btn-danger" data-cancel><i class="fa fa-times"></i></button>
-              </td>
-            </tr>
-            <tr data-date="2026-11-02">
-              <td>APT-1049</td>
-              <td>Noah Garcia</td>
-              <td>Dr. Jason Stewart</td>
-              <td>Pregnancy</td>
-              <td>Nov 02, 2026 · 08:45 AM</td>
-              <td><span class="label label-approved">Approved</span></td>
-              <td class="action-cell">
-                <button class="btn btn-xs btn-default" data-view="Appointment APT-1049"><i class="fa fa-eye"></i></button>
-                <button class="btn btn-xs btn-admin-primary" data-approve><i class="fa fa-check"></i></button>
-                <button class="btn btn-xs btn-danger" data-cancel><i class="fa fa-times"></i></button>
-              </td>
-            </tr>
+            <?php
+            }
+            ?>
           </tbody>
         </table>
       </div>
